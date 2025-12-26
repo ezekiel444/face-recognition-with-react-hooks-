@@ -73,7 +73,7 @@ export default function App() {
       });
       const data = await response.json();
       if (data) {
-        const backendResponse = await fetch("https://limitless-fortress-98511.herokuapp.com/findface", {
+        const backendResponse = await fetch("http://localhost:4000", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ id: updateUser.id }),

@@ -16,7 +16,7 @@ function Register({ onChangeRoute, handleUserUpdate }) {
   };
 
   const handleRegister = () => {
-    fetch("https://limitless-fortress-98511.herokuapp.com/register", {
+    fetch("https://localhost:4000/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
